@@ -19,7 +19,7 @@ export class TableComponent implements OnInit {
     }
 
     getUser() {
-      this.httpClient.post("http://localhost:3000/api/v1/user/get-users", null)
+      this.httpClient.post("https://trial.innovix.ai/api/v1/user/get-users", null)
       .subscribe((res: any)=>{
 
         res.data.forEach((x:any)=>{
